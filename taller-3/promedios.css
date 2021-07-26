@@ -5,13 +5,13 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   font-size: 62.5%;
   font-family: 'Concert One', cursive;
-}
-
-a {
-  text-decoration: none;
 }
 
 body {
@@ -67,50 +67,6 @@ body header nav .titulo p {
   color: white;
 }
 
-body main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 75vh;
-  background-color: white;
-}
-
-body main .elemento-taller {
-  width: 210px;
-  height: 280px;
-  background-color: #051259;
-  margin: 5px;
-  border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  font-size: 2rem;
-  text-align: center;
-}
-
-body main .elemento-taller a {
-  font-size: 3rem;
-  color: white;
-}
-
 body footer {
   width: 100%;
   height: 10vh;
@@ -143,4 +99,4 @@ body footer ul li {
 body footer ul li a {
   color: black;
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=promedios.css.map */

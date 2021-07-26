@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes</title>
+    <link rel="stylesheet" href="porcentajes.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- <div class=".icono-perfil"></div> -->
+            <div class="titulo">
+                <h1>Calcula tu descuento</h1>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <form action="">
+            <label for="precio">Ingresa el precio de tu producto</label>
+            <input type="number" id="precio">
+
+            <label for="descuento">Ingresa el descuento es porcentaje</label>
+            <input type="number" id="descuento">
+
+            <button type="button" onclick="calcularDescuento()">Calcular descuento</button>
+
+            <p id="resultado"></p>
+        </form>
+
+        <form action="">
+            <label for="precio">Ingresa el precio de tu producto</label>
+            <input type="number" id="precio">
+
+            <label for="cupon">Ingresa tu cupón</label>
+            <input type="text" id="cupon">
+
+            <button type="button" onclick="calcularCupon()">Calcular descuento</button>
+
+            <p id="resultado"></p>
+        </form>
+    </main>
+    
+    <footer>
+            <ul>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Ustudia en Platzi</a></li>
+                <li><a href="">LinkedIn</a></li>
+            </ul>
+    </footer>
+    <script src="./porcentajes.js"></script>
+</body>
+</html>

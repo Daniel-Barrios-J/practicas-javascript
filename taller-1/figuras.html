@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas | Curso práctico de JavaScript</title>
+    <link rel="stylesheet" href="./figuras.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- <div class=".icono-perfil"></div> -->
+            <div class="titulo">
+                <h1>Figuras geométricas</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>Calcula el área y perímetro de un cuadrado</h2>
+            <form action="">
+                <label for="inputCuadrado">Escribe cuanto mide cada lado de tu cuadrado</label>
+                <input type="number" name="" id="inputCuadrado">
+                <button type="button" onclick="c_perimetroCuadrado()">Calcular el perímetro</button>
+                <button type="button" onclick="c_areaCuadrado()">Calcular el área</button>
+            </form>
+        </section>
+        <!-- RETO ISOCELES----------------------------------------- -->
+        <section class="formulario-isoceles">
+            <h2>Calcula la altura de un triangulo isoceles</h2>
+            <form action="">
+                <label for="inputLadoUno">Ingresa el primer lado del triangulo isoceles en cm</label>
+                <input type="number" name="" id="inputLadoUno">
+    
+                <label for="inputLadoDos">Ingresa el segundo lado del triangulo isoceles en cm</label>
+                <input type="number" name="" id="inputLadoDos">
+    
+                <label for="inputBase">Ingresa la base del triangulo isoceles en cm</label>
+                <input type="number" name="" id="inputBase">
+    
+                <button type="button" onclick="calcularAltura()">Calcular altura</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Ustudia en Platzi</a></li>
+            <li><a href="">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    <script src="./figuras.js"></script>
+</body>
+</html>
