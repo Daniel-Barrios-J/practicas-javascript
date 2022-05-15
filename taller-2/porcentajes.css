@@ -5,13 +5,13 @@
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 html {
   font-size: 62.5%;
-  font-family: 'Concert One', cursive;
+  font-family: 'Comfortaa', cursive;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -22,6 +22,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body header {
@@ -36,12 +39,33 @@ body header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body header nav .icono-perfil {
+  width: 50px;
+  height: 50px;
+  background-image: url("./assets/perfil");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  background-color: #051259;
+  margin-left: 25px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+body header nav .icono-perfil p {
+  color: white;
+  font-weight: bold;
 }
 
 body header nav .titulo {
@@ -60,6 +84,7 @@ body header nav .titulo {
 body header nav .titulo h1 {
   font-size: 4rem;
   color: white;
+  margin-bottom: 10px;
 }
 
 body header nav .titulo p {
@@ -67,7 +92,34 @@ body header nav .titulo p {
   color: white;
 }
 
-body main form {
+body header nav .menu {
+  width: 50px;
+  height: 50px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+body main {
+  width: 100%;
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .formulario {
+  background-color: cadetblue;
+  width: 40%;
+  height: 90%;
+  border-radius: 20px;
+  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,9 +127,90 @@ body main form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+}
+
+body main .formulario h2 {
+  font-size: 3rem;
+  margin: 25px 10px;
+  font-weight: 600;
+}
+
+body main .formulario form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .formulario form label {
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+body main .formulario form input {
+  width: 60%;
+  height: 35px;
+  border-radius: 10px;
+  margin: 10px;
+  border: none;
+  opacity: 0.7;
+  padding: 0 15px;
+}
+
+body main .formulario form button {
+  width: 60%;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  border: solid 2px darkslategrey;
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: comfortaa;
+  font-weight: 600;
+}
+
+body main .formulario form .caja-resultado {
+  width: 40%;
+  height: 60px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+body main .formulario form .caja-resultado p:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+body main .formulario form #resultado {
+  font-size: 2rem;
+  margin-top: 3px;
+}
+
+body main .formulario form #resultado-cupon {
+  font-size: 2rem;
+  margin-top: 3px;
 }
 
 body footer {

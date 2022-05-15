@@ -5,13 +5,13 @@
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 html {
   font-size: 62.5%;
-  font-family: 'Concert One', cursive;
+  font-family: 'Comfortaa', cursive;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -22,6 +22,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body header {
@@ -36,12 +39,33 @@ body header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body header nav .icono-perfil {
+  width: 50px;
+  height: 50px;
+  background-image: url("./assets/perfil");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  background-color: #051259;
+  margin-left: 25px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+body header nav .icono-perfil p {
+  color: white;
+  font-weight: bold;
 }
 
 body header nav .titulo {
@@ -60,11 +84,20 @@ body header nav .titulo {
 body header nav .titulo h1 {
   font-size: 4rem;
   color: white;
+  margin-bottom: 10px;
 }
 
 body header nav .titulo p {
   font-size: 1.5rem;
   color: white;
+}
+
+body header nav .menu {
+  width: 50px;
+  height: 50px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  margin-right: 25px;
 }
 
 body main {
@@ -83,10 +116,11 @@ body main {
 }
 
 body main .elemento-taller {
-  width: 210px;
-  height: 280px;
+  width: 30%;
+  height: 60%;
   background-color: #051259;
-  margin: 5px;
+  margin: 25px;
+  padding: 10px;
   border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,9 +140,17 @@ body main .elemento-taller {
   text-align: center;
 }
 
-body main .elemento-taller a {
+body main .elemento-taller p:first-child {
   font-size: 3rem;
   color: white;
+}
+
+body main .elemento-taller p {
+  margin: 5px 0;
+}
+
+body main .elemento-taller:hover {
+  background-color: #2E29A6;
 }
 
 body footer {

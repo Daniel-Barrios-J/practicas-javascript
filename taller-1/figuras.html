@@ -3,7 +3,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +13,14 @@
 <body>
     <header>
         <nav>
-            <!-- <div class=".icono-perfil"></div> -->
+            <a href="../Inicio/index.html" class="icono-perfil">
+                <p>Inicio</p>
+            </a>
             <div class="titulo">
-                <h1>Figuras geométricas</h1>
+                <h1>Taller #1: Figuras geometricas</h1>
+                <p>por Daniel Barrios</p>
             </div>
+            <div class="menu"></div>
         </nav>
     </header>
 
@@ -28,10 +32,14 @@
                 <input type="number" name="" id="inputCuadrado">
                 <button type="button" onclick="c_perimetroCuadrado()">Calcular el perímetro</button>
                 <button type="button" onclick="c_areaCuadrado()">Calcular el área</button>
+                <div class="caja-resultado">
+                    <p>El resultado es:</p>
+                    <p id="resultado"></p>
+                </div>
             </form>
         </section>
         <!-- RETO ISOCELES----------------------------------------- -->
-        <section class="formulario-isoceles">
+        <section class="formulario">
             <h2>Calcula la altura de un triangulo isoceles</h2>
             <form action="">
                 <label for="inputLadoUno">Ingresa el primer lado del triangulo isoceles en cm</label>
@@ -44,6 +52,11 @@
                 <input type="number" name="" id="inputBase">
     
                 <button type="button" onclick="calcularAltura()">Calcular altura</button>
+
+                <div class="caja-resultado">
+                    <p>El resultado es:</p>
+                    <p id="resultado"></p>
+                </div>
             </form>
         </section>
     </main>

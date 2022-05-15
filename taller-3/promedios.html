@@ -3,25 +3,56 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas | Curso práctico de JavaScript</title>
     <link rel="stylesheet" href="./promedios.css">
-    <title>Promedios</title>
 </head>
 <body>
     <header>
         <nav>
-            <!-- <div class=".icono-perfil"></div> -->
+            <a href="../Inicio/index.html" class="icono-perfil">
+                <p>Inicio</p>
+            </a>
             <div class="titulo">
-                <h1>Promedio, moda y mediana</h1>
+                <h1>Taller #3: Media, moda y mediana</h1>
+                <p>por Daniel Barrios</p>
             </div>
+            <div class="menu"></div>
         </nav>
     </header>
     
     <main>
+        <div class="formulario">
+            <h2>Ingresa una lista de salarios para el analisis</h2>
+            <form action="">
+                <label for="elementoLista">Ingresa el elemento</label>
+                <input type="number" id="elemento">
+    
+                <button type="button" onclick="agregarElemento()">Agregar elemento</button>
+    
+                <div class="caja-resultado">
+                    <p>Esta es tu lista:</p>
+                    <p id="listaTotal"></p>
+                </div>
+            </form>
+        </div>
 
+        <div class="formulario">
+            <h2>Que vamos a calcular?</h2>
+            <form action="">
+                <button type="button" onclick="promedioLista(lista)">Promedio de salarios</button>
+                <button type="button" onclick="medianaLista(lista)">Mediana de salarios</button>
+                <button type="button" onclick="modaLista(lista)">Moda de salarios</button>
+    
+                <div class="caja-resultado">
+                    <p>Resultado:</p>
+                    <p id="resultado"></p>
+                </div>
+            </form>
+        </div>
     </main>
     
     <footer>

@@ -1,6 +1,17 @@
+let lista = [];
+
+const agregarElemento = ()=> {
+    let inputElemento = document.getElementById("elemento");
+    const value = parseInt(inputElemento.value);
+    const add = lista.push(value);
+    let resultado = document.getElementById("listaTotal");
+    let listado = lista.toString();
+    resultado.innerText = listado;
+}
+
 // PROMEDIO
 
-function promedioLista(lista) {
+const promedioLista = (lista)=> {
     // Promedio con ciclo for
     // let sumaLista=0;
     // for (let i=0; i<lista.length; i++) {
@@ -13,7 +24,10 @@ function promedioLista(lista) {
             return valorAcumulado + nuevoElemento;
         }
     );
-    return promedio = sumaLista/lista.length;
+    let promedio = sumaLista/lista.length;
+    let resultado = document.getElementById("resultado");
+    resultado.innerText = promedio;
+    return promedio;
 }
 
 // MEDIANA
@@ -25,10 +39,14 @@ function medianaLista(lista) {
     if (lista.length % 2 === 0) {
         const elemento1 = mitadLista - 1;
         const elemento2 = mitadLista;
-        return promedioLista([lista[elemento1],lista[elemento2]]);
+        let mediana  = promedioLista([lista[elemento1],lista[elemento2]]);
+        let resultado = document.getElementById("resultado");
+        resultado.innerText = mediana;
     }
     else {
-        return lista[parseInt(mitadLista)];
+        let mediana = lista[parseInt(mitadLista)];
+        let resultado = document.getElementById("resultado");
+        resultado.innerText = mediana;
     }
 }
 
@@ -46,5 +64,8 @@ function modaLista(lista) {
         }
     );
     const arrayCount = Object.entries(listaCount).sort(function(a,b){return b[1]-a[1];});
-    return arrayCount[0];
+    let moda = arrayCount[0];
+    let modaTexto = moda[0].toString();
+    let resultado = document.getElementById("resultado");
+    resultado.innerText = modaTexto;
 }

@@ -3,47 +3,62 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porcentajes</title>
-    <link rel="stylesheet" href="porcentajes.css">
+    <title>Descuentos</title>
+    <link rel="stylesheet" href="./porcentajes.css">
 </head>
 <body>
     <header>
         <nav>
-            <!-- <div class=".icono-perfil"></div> -->
+            <a href="../Inicio/index.html" class="icono-perfil">
+                <p>Inicio</p>
+            </a>
             <div class="titulo">
-                <h1>Calcula tu descuento</h1>
+                <h1>Taller #2: Calculo de descuentos</h1>
+                <p>por Daniel Barrios</p>
             </div>
+            <div class="menu"></div>
         </nav>
     </header>
     
     <main>
-        <form action="">
-            <label for="precio">Ingresa el precio de tu producto</label>
-            <input type="number" id="precio">
-
-            <label for="descuento">Ingresa el descuento es porcentaje</label>
-            <input type="number" id="descuento">
-
-            <button type="button" onclick="calcularDescuento()">Calcular descuento</button>
-
-            <p id="resultado"></p>
-        </form>
-
-        <form action="">
-            <label for="precio">Ingresa el precio de tu producto</label>
-            <input type="number" id="precio">
-
-            <label for="cupon">Ingresa tu cupón</label>
-            <input type="text" id="cupon">
-
-            <button type="button" onclick="calcularCupon()">Calcular descuento</button>
-
-            <p id="resultado"></p>
-        </form>
+        <div class="formulario">
+            <h2>Calcula el descuento de un producto</h2>
+            <form action="">
+                <label for="precio">Ingresa el precio de tu producto</label>
+                <input type="number" id="precio">
+    
+                <label for="descuento">Ingresa el porcentaje de descuento</label>
+                <input type="number" id="descuento">
+    
+                <button type="button" onclick="calcularDescuento()">Calcular descuento</button>
+    
+                <div class="caja-resultado">
+                    <p>El resultado es:</p>
+                    <p id="resultado"></p>
+                </div>
+            </form>
+        </div>
+        <div class="formulario">
+            <form action="">
+                <h2>Calcula el descuento con tu cupon</h2>
+                <label for="precio-cupon">Ingresa el precio de tu producto</label>
+                <input type="number" id="precio-cupon">
+    
+                <label for="cupon">Ingresa tu cupón</label>
+                <input type="text" id="cupon">
+    
+                <button type="button" onclick="calcularCupon()">Calcular descuento</button>
+    
+                <div class="caja-resultado">
+                    <p>El resultado es:</p>
+                    <p id="resultado-cupon"></p>
+                </div>
+            </form>
+        </div>
     </main>
     
     <footer>
