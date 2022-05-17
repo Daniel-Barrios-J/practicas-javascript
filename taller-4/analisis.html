@@ -25,7 +25,38 @@
     </header>
     
     <main>
+        <div class="formulario">
+            <h2>Ingresa los nombres y salarios a la lista</h2>
+            <form action="">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+    
+                <label for="salario">Salario</label>
+                <input type="number" id="salario">
 
+                <button type="button" onclick="agregarElemento()">Agregar Usuario</button>
+    
+                <div class="caja-resultado">
+                    <p>Esta es tu lista:</p>
+                    <p id="listaTotal"></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="formulario">
+            <h2>Que vamos a calcular?</h2>
+            <form action="">
+                <button type="button" onclick="promedioLista(lista)">Promedio de salarios</button>
+                <button type="button" onclick="medianaLista(lista)">Mediana de salarios</button>
+                <button type="button" onclick="modaLista(lista)">Moda de salarios</button>
+                <button type="button" onclick="medianaDiezPorCiento(lista)">Mediana del top 10%</button>
+
+                <div class="caja-resultado">
+                    <p>Resultado:</p>
+                    <p id="resultado"></p>
+                </div>
+            </form>
+        </div>
     </main>
     
     <footer>
@@ -35,5 +66,6 @@
                 <li><a href="">LinkedIn</a></li>
             </ul>
     </footer>
+    <script src="./analisis.js"></script>
 </body>
 </html>

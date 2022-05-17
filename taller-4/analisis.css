@@ -178,11 +178,12 @@ body main .formulario form input {
 
 body main .formulario form button {
   width: 60%;
-  height: 50px;
+  min-height: 50px;
+  height: auto;
   border-radius: 10px;
   margin: 10px;
   border: solid 2px darkslategrey;
-  padding: 0 15px;
+  padding: 5px 15px;
   cursor: pointer;
   font-size: 2rem;
   font-family: comfortaa;
