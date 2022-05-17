@@ -1,14 +1,3 @@
-const calcularDescuento = () => {
-    const inputPrecio = document.getElementById("precio");
-    const precio = parseFloat(inputPrecio.value);
-
-    const inputDescuento = document.getElementById("descuento");
-    const descuento = parseFloat(inputDescuento.value);
-
-    const valorFinal = (precio-(precio*descuento/100));
-    const resultado = document.getElementById("resultado");
-    resultado.innerText = "$"+valorFinal;
-}
 // CUPONES---------------------
 let cupones = [
     {
@@ -21,12 +10,29 @@ let cupones = [
     }
 ]
 
+//descuento
+
+const calcularDescuento = () => {
+    const inputPrecio = document.getElementById("precio");
+    const precio = parseFloat(inputPrecio.value);
+
+    const inputDescuento = document.getElementById("descuento");
+    const descuento = parseFloat(inputDescuento.value);
+
+    const valorFinal = (precio-(precio*descuento/100));
+    const resultado = document.getElementById("resultado");
+    resultado.innerText = "$"+valorFinal;
+}
+
+//cupones
+
 const calcularCupon = () => {
     const resultadoCupon = (descuento) => {
         let valorFinal = (precio-(precio*descuento/100));
         let resultado = document.getElementById("resultado-cupon");
         resultado.innerText = "$"+valorFinal;
     }
+
     const inputPrecio = document.getElementById("precio-cupon");
     const precio = parseFloat(inputPrecio.value);
 
@@ -40,6 +46,7 @@ const calcularCupon = () => {
         resultadoCupon(cupones[1].descuento);
     }
     else {
-        alert("NO VALIDO");
+        let resultado = document.getElementById("resultado-cupon");
+        resultado.innerText = "No valido";
     }
 }

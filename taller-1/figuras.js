@@ -1,39 +1,39 @@
 // Cálculos para cuadrados
-function perimetroCuadrado(lado) {
+const perimetroCuadrado = (lado) => {
     return perimetro = lado*4;    
 }
-function areaCuadrado(lado) {
+const areaCuadrado = (lado) => {
     return area = lado*lado;
 }
 
 // Cálculos para cuadrados
-function perimetroTriangulo(lado1,lado2,base) {
+const perimetroTriangulo = (lado1,lado2,base) => {
     return perimetro = lado1 + lado2 + base;
 } 
 
-function areaTriangulo(base,altura) {
+const areaTriangulo = (base,altura) => {
     return area = (base*altura)/2;
 }
 
 // Cálculos para cuadrados
-function perimetroCirculo(radio) {
+const perimetroCirculo = (radio) => {
     return perimetro = radio*2*Math.PI; 
 }
-function areaCirculo(radio) {
+const areaCirculo = (radio) => {
     return areaCirculo = radio*radio*Math.PI;
 }
 
 
 // Interacción con HTML
 
-function c_perimetroCuadrado() {
+const c_perimetroCuadrado = () => {
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
     const perimetro = perimetroCuadrado(value);
     alert("El perímetro del cuadrado es de: "+perimetro+"cm");
 }
 
-function c_areaCuadrado() {
+const c_areaCuadrado = () => {
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
     const area = areaCuadrado(value);
@@ -41,7 +41,7 @@ function c_areaCuadrado() {
 }
 // -------RETO ISOCELES--------------------
 //Esta función se llama al dar click al botón "Calcular altura"
-function calcularAltura() {
+const calcularAltura = () => {
     const inputUno = document.getElementById("inputLadoUno");
     const ladoUno = parseFloat(inputUno.value);
     const inputDos = document.getElementById("inputLadoDos");

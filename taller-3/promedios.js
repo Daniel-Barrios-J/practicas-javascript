@@ -20,9 +20,7 @@ const promedioLista = (lista)=> {
 
     // Promedio con método reduce
     const sumaLista = lista.reduce(
-        function(valorAcumulado=0, nuevoElemento) {
-            return valorAcumulado + nuevoElemento;
-        }
+        (valorAcumulado = 0, nuevoElemento) => valorAcumulado + nuevoElemento
     );
     let promedio = sumaLista/lista.length;
     let resultado = document.getElementById("resultado");
@@ -32,8 +30,8 @@ const promedioLista = (lista)=> {
 
 // MEDIANA
 
-function medianaLista(lista) {
-    lista.sort(function(a,b){return a-b;});
+const medianaLista = (lista) => {
+    lista.sort((a, b) => a - b);
     const mitadLista = lista.length / 2;
 
     if (lista.length % 2 === 0) {
@@ -51,11 +49,11 @@ function medianaLista(lista) {
 }
 
 // MODA
-function modaLista(lista) {
+const modaLista = (lista) => {
     const listaCount = {};
     lista.map(
-        function(elemento) {
-            if(listaCount[elemento]) {
+        (elemento) => {
+            if (listaCount[elemento]) {
                 listaCount[elemento] += 1;
             }
             else {
@@ -63,7 +61,8 @@ function modaLista(lista) {
             }
         }
     );
-    const arrayCount = Object.entries(listaCount).sort(function(a,b){return b[1]-a[1];});
+    const arrayCount = Object.entries(listaCount).sort((a, b) => b[1] - a[1]);
+    console.log(arrayCount);
     let moda = arrayCount[0];
     let modaTexto = moda[0].toString();
     let resultado = document.getElementById("resultado");
